@@ -1,0 +1,449 @@
+// app global css in SCSS form
+
+
+/*paralax*/
+.shape {
+    width: 100%;
+    margin-bottom:-55px;
+}
+.paralaxHeader a {
+   text-decoration: none;
+}
+/* end paralax*/
+
+//cart-page
+.slikaKorpa {
+    width: 100px;
+    margin-bottom: 10px;
+
+}
+//end-cart-page
+
+//category-page
+.categoryItem {
+    margin: 20px 0 10px 20px;
+    max-height: 100px;
+    overflow: hidden;
+    background: #f0f0f0;
+}
+
+.avatar {
+    width: 110px;
+    border-radius: 50%;
+}
+.categoryLink a {
+    text-decoration: none;
+    color: black;
+}
+.tabsBorder {
+    border: 1px solid LightGrey;
+    border-radius: 10px;
+}
+
+.categoryItem:hover {
+    background: white;
+}
+.categoryLink a:hover {
+    color: #990000;
+}
+//end-category-page
+
+//contact-page
+.iconSize {
+    width: 50px;
+}
+//end-contact-page
+
+//faq-page
+.faq {
+    font-family: 'Jost', sans-serif;
+}
+//end-faq-page
+
+//gallery-page
+.fgRow {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 6px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .fgCol {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 6px;
+  }
+  
+  .fgCol img {
+    margin-top: 8px;
+    width: 100%;
+  }
+
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .fgCol {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .fgCol {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  .facebookGallery {
+      max-width: 1300px;
+      margin: auto;
+      padding-top: 50px;
+      background-color: black;
+      
+
+  }
+   .main {
+      background-color: black;
+  }
+//end-gallery-page
+
+//shop-page
+.headerBold { 
+    font-weight: 400;
+  }
+  
+  .paragraf {
+    font-size: 18px;
+  }
+  .headerThin {
+    font-family: 'Jost', sans-serif;
+  }
+  
+  .gallery {
+    width: 25%;
+    float: left;
+    margin: auto;
+  }
+  .gallery h5 {
+    font-size: 20px;
+  }
+  
+  @media screen and (max-width: 699px) {
+  
+  .gallery {
+    width: 100%;
+    margin-top: 15px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .gallery {
+    width: 50%;
+    margin-top: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery {
+    width: 33.33%;
+    margin-top: 15px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .gallery {
+    width: 25%;
+    margin-top: 15px;
+  }
+}
+.quick-info {
+   text-transform: uppercase;
+}
+ 
+
+.gallery:hover {
+  color: #737373;
+  opacity: 0.7;
+  
+}
+.demo {
+  display: none;
+}
+@media only screen and (max-width: 1200px) {
+    .homeImage {
+      max-width: 490px;
+   }
+   }
+//end-shop-page
+
+//animation
+.postload {
+    height: 900px;
+    background-color: grey;
+    
+  }
+
+  .animate__animated .animate__backOutLeft {
+    --animate-duration: 5s;
+    --animate-delay: 3s;
+  }
+//end-animation
+
+/*preloader*/
+
+/* PRELOADER CSS */
+/*.ctn-preloader {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: default;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9000;
+}
+
+.ctn-preloader .animation-preloader {
+  z-index: 1000;
+}
+
+.ctn-preloader .animation-preloader .spinner {
+  -webkit-animation: spinner 1s infinite linear;
+  animation: spinner 1s infinite linear;
+  border-radius: 50%;
+  border: 4px solid #e2dfdd;
+  border-top-color: #c7a17a;
+  height: 150px;
+  margin: 0 auto 3.5em auto;
+  width: 150px;
+}
+
+.ctn-preloader .animation-preloader .txt-loading {
+  font: bold 5em "Jost", sans-serif;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.ctn-preloader .animation-preloader .txt-loading .letters-loading {
+  color: #e2dfdd;
+  position: relative;
+}
+
+.ctn-preloader .animation-preloader .txt-loading .letters-loading:before {
+  -webkit-animation: letters-loading 4s infinite;
+  animation: letters-loading 4s infinite;
+  color: #010103;
+  content: attr(data-text-preloader);
+  left: 0;
+  opacity: 0;
+  font-family: "Jost", sans-serif;
+  position: absolute;
+  top: -3px;
+  -webkit-transform: rotateY(-90deg);
+  transform: rotateY(-90deg);
+}
+
+.ctn-preloader
+  .animation-preloader
+  .txt-loading
+  .letters-loading:nth-child(2):before {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.ctn-preloader
+  .animation-preloader
+  .txt-loading
+  .letters-loading:nth-child(3):before {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.ctn-preloader
+  .animation-preloader
+  .txt-loading
+  .letters-loading:nth-child(4):before {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.ctn-preloader
+  .animation-preloader
+  .txt-loading
+  .letters-loading:nth-child(5):before {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+.ctn-preloader
+  .animation-preloader
+  .txt-loading
+  .letters-loading:nth-child(6):before {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.ctn-preloader
+  .animation-preloader
+  .txt-loading
+  .letters-loading:nth-child(7):before {
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+
+.ctn-preloader
+  .animation-preloader
+  .txt-loading
+  .letters-loading:nth-child(8):before {
+  -webkit-animation-delay: 1.4s;
+  animation-delay: 1.4s;
+}
+
+.ctn-preloader.dark .animation-preloader .spinner {
+  border-color: rgba(255, 255, 255, 0.2);
+  border-top-color: #ffffff;
+}
+
+.ctn-preloader.dark .animation-preloader .txt-loading .letters-loading {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.ctn-preloader.dark .animation-preloader .txt-loading .letters-loading:before {
+  color: #ffffff;
+}
+
+.ctn-preloader p {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  color: #32323d;
+}
+
+.ctn-preloader .loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.ctn-preloader .loader .row {
+  height: 100%;
+}
+
+.ctn-preloader .loader .loader-section {
+  padding: 0px;
+}
+
+.ctn-preloader .loader .loader-section .bg {
+  background-color: #f4f1ee;
+  height: 100%;
+  left: 0;
+  width: 100%;
+  -webkit-transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
+  -o-transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.ctn-preloader .loader.dark_bg .loader-section .bg {
+  background: #010103;
+}
+
+.ctn-preloader.loaded .animation-preloader {
+  opacity: 0;
+  -webkit-transition: 0.3s ease-out;
+  -o-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+.ctn-preloader.loaded .loader-section .bg {
+  width: 0;
+  -webkit-transition: 0.7s 0.3s allcubic-bezier(0.1, 0.1, 0.1, 1);
+  -o-transition: 0.7s 0.3s allcubic-bezier(0.1, 0.1, 0.1, 1);
+  transition: 0.7s 0.3s allcubic-bezier(0.1, 0.1, 0.1, 1);
+}
+
+@-webkit-keyframes spinner {
+  to {
+    -webkit-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes spinner {
+  to {
+    -webkit-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+  }
+}
+@-webkit-keyframes letters-loading {
+  0%,
+  75%,
+  100% {
+    opacity: 0;
+    -webkit-transform: rotateY(-90deg);
+    transform: rotateY(-90deg);
+  }
+  25%,
+  50% {
+    opacity: 1;
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+}
+@keyframes letters-loading {
+  0%,
+  75%,
+  100% {
+    opacity: 0;
+    -webkit-transform: rotateY(-90deg);
+    transform: rotateY(-90deg);
+  }
+  25%,
+  50% {
+    opacity: 1;
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+}
+@media screen and (max-width: 767px) {
+  .ctn-preloader .animation-preloader .spinner {
+    height: 8em;
+    width: 8em;
+  }
+
+  .ctn-preloader .animation-preloader .txt-loading {
+    font: bold 3.5em "Jost", sans-serif;
+  }
+}
+@media screen and (max-width: 500px) {
+  .ctn-preloader .animation-preloader .spinner {
+    height: 7em;
+    width: 7em;
+  }
+
+  .ctn-preloader .animation-preloader .txt-loading {
+    font: bold 2em "Jost", sans-serif;
+  }
+}
+*/
+/*end preloader*/
+
